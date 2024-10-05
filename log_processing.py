@@ -15,7 +15,7 @@ def process_log_file(log_file, offset_pattern, freq_pattern):
     df_frequencies['elapsed_time'] = pd.to_numeric(df_frequencies['elapsed_time'])
     df_frequencies['frequency'] = pd.to_numeric(df_frequencies['frequency'])
     
-=    df = pd.merge(df_offsets, df_frequencies, on='elapsed_time', how='outer')
+    df = pd.merge(df_offsets, df_frequencies, on='elapsed_time', how='outer')
     df = df.sort_values(by='elapsed_time').reset_index(drop=True)
     df['seconds'] = df['elapsed_time'] - df['elapsed_time'].iloc[0]
 
