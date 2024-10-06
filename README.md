@@ -1,6 +1,6 @@
 # Análise Estatística da Sincronização de Tempo em Redes Locais Usando LinuxPTP ⏰
 
-Este repositório contém um notebook Jupyter que realiza uma análise estatística da sincronização de tempo em redes locais utilizando o LinuxPTP. Este trabalho foi desenvolvido como parte da disciplina EC01019 - PROBABILIDADE E ESTATISTICA ministrada no quarto semestre da [Faculdade de Engenharia da Computação e Telecomunicações](https://www.itec.ufpa.br/index.php?option=com_content&view=article&id=211:faculdade-de-engenharia-da-computacao-e-telecomunicacoes&catid=74&Itemid=114&lang=pt) da [Universidade Federal do Pará](https://ufpa.br/).
+Este repositório contém um notebook Jupyter que realiza uma análise estatística da sincronização de tempo em redes locais utilizando o LinuxPTP. Este trabalho foi desenvolvido como parte da disciplina [EC01019 - PROBABILIDADE E ESTATISTICA](https://github.com/glaucogoncalves/p-e) ministrada no quarto semestre da [Faculdade de Engenharia da Computação e Telecomunicações](https://www.itec.ufpa.br/index.php?option=com_content&view=article&id=211:faculdade-de-engenharia-da-computacao-e-telecomunicacoes&catid=74&Itemid=114&lang=pt) da [Universidade Federal do Pará](https://ufpa.br/).
 
 ## Descrição 📖
 
