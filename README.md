@@ -35,6 +35,7 @@ Os dados são coletados diretamente dos logs do **ptp4l**, a ferramenta do Linux
 
 ## Estrutura do Repositório  📁
 
+```plaintext
 LPTP_Analyzer/
 ├── LPTP_Analyzer.ipynb       # Notebook Jupyter contendo a análise completa
 ├── logs/                     # Diretório contendo os arquivos de log utilizados na análise
@@ -47,8 +48,8 @@ LPTP_Analyzer/
 │   └── ...
 ├── log_processing.py         # Script Python para processar os logs do ptp4l
 ├── plotting.py               # Script Python para gerar os gráficos da análise
-└── requirements.txt          # Arquivo de dependências do Python
-
+└── requirements.txt         
+```
 ## Como Executar 🔨
 
 1. Clone o repositório:
