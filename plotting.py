@@ -1,7 +1,11 @@
 import matplotlib.pyplot as plt
 import os
 
-def plot_graphs(log_files, dataframes, y_label, plot_suffix, color='blue'):
+def plot_graphs(log_files, dataframes, y_label, plot_suffix, color='blue', single_log_file=None):
+    if single_log_file is not None:
+        dataframes = {single_log_file: dataframes[single_log_file]}
+        log_files = [single_log_file]
+    
     global_min_seconds = float('inf')
     global_max_seconds = float('-inf')
     global_min_value = float('inf')
@@ -34,3 +38,8 @@ def plot_graphs(log_files, dataframes, y_label, plot_suffix, color='blue'):
         plot_file_name = f'plots/{base_name}_{plot_suffix}.png'
         plt.savefig(plot_file_name, format='png', bbox_inches='tight')
         plt.show()
+
+# Example usage for single dataframe plot
+# Assuming df_h_log is already defined and contains the necessary data
+dataframes = {'df_h_log': df_h_log}
+plot_graphs(log_files=[], dataframes=dataframes, y_label='Offset (ns)', plot_suffix='offset_results', color='green', single_log_file='df_h_log')
