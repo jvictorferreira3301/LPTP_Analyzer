@@ -1,5 +1,6 @@
 import matplotlib.pyplot as plt
 import os
+from statsmodels.graphics.tsaplots import plot_acf
 
 def plot_graphs(log_files, dataframes, y_label, plot_suffix, color='blue', single_log_file=None):
     if single_log_file is not None:
@@ -38,3 +39,11 @@ def plot_graphs(log_files, dataframes, y_label, plot_suffix, color='blue', singl
         plot_file_name = f'plots/{base_name}_{plot_suffix}.png'
         plt.savefig(plot_file_name, format='png', bbox_inches='tight')
         plt.show()
+
+def plot_acf_log(df, column, title, lags=50):
+    plt.figure(figsize=(10, 6))
+    plot_acf(df[column], lags=lags, alpha=0.05)
+    plt.title(title)
+    plt.xlabel('Lags')
+    plt.ylabel('Autocorrelation')
+    plt.show()
