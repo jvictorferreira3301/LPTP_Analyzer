@@ -2,6 +2,9 @@
 
 Este repositório contém um notebook Jupyter que realiza uma análise estatística da sincronização de tempo em redes locais utilizando o LinuxPTP. Este trabalho foi desenvolvido como parte da disciplina [EC01019 - PROBABILIDADE E ESTATISTICA](https://github.com/glaucogoncalves/p-e) ministrada no quarto semestre da [Faculdade de Engenharia da Computação e Telecomunicações](https://www.itec.ufpa.br/index.php?option=com_content&view=article&id=211:faculdade-de-engenharia-da-computacao-e-telecomunicacoes&catid=74&Itemid=114&lang=pt) da [Universidade Federal do Pará](https://ufpa.br/).
 
+<div align="center">
+    <img src="./assets/PTP.png" width="325" height="auto">
+</div>
 
 ## Descrição 📖
 
@@ -15,11 +18,6 @@ Os principais objetivos deste trabalho incluem:
 
 - **Testar Timestamping em Software vs. Hardware**: Comparar a eficácia da sincronização utilizando **timestamping em software** e **timestamping em hardware**.
 - **Comparar Topologias de Sincronização**: Verificar a eficácia de diferentes configurações, como topologias **mestre-escravo** simples e aquelas que envolvem **_Transparent Clocks_** ou **_Boundary Clocks_**.
-
-<div style="display: flex; align-items: center;">
-        <img src="./assets/PTP.png" width="auto" height="auto">
-    </figure>
-</div>
 
 ## Ambiente de Testes 💻
 
