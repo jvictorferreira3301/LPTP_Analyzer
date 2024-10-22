@@ -28,6 +28,7 @@ def plot_graphs(log_files, dataframes, y_label, plot_suffix, color='blue', singl
         ax1.set(xlabel='Elapsed Time (s)', ylabel=y_label)
         ax1.set_xlim(global_min_seconds, global_max_seconds)
         ax1.set_ylim(global_min_value, global_max_value)
+        ax1.set_title(os.path.basename(log_file))
         
         ax2.hist(df['offset'], bins=50, orientation='horizontal', edgecolor='black', color=color)
         ax2.set(ylabel=y_label, xlabel='Occurrences')
@@ -74,6 +75,7 @@ def plot_frequency_graphs(log_files, dataframes, y_label, plot_suffix, color='bl
         ax1.set(xlabel='Elapsed Time (s)', ylabel=y_label)
         ax1.set_xlim(global_min_seconds, global_max_seconds)
         ax1.set_ylim(global_min_value, global_max_value)
+        ax1.set_title(os.path.basename(log_file))
         
         ax2.hist(df['frequency'], bins=50, orientation='horizontal', edgecolor='black', color=color)
         ax2.set(ylabel=y_label, xlabel='Occurrences')
